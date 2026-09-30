@@ -6,9 +6,9 @@ public class point {
     private String nom;
 
     public point(String n, int x, int y) {
-        this.nom = n;
-        this.abscisse = x;
-        this.ordonnee = y;
+        nom = n;
+        abscisse = x;
+        ordonnee = y;
     }
 
     public point(int x, int y) {
@@ -24,16 +24,16 @@ public class point {
     }
 
     public void TranslHoriz(int d) {
-        this.abscisse += d;
+        abscisse += d;
     }
 
     public void TranslVert(int d) {
-        this.ordonnee += d;
+        ordonnee += d;
     }
 
     public void Translation(int d, int c) {
-        this.ordonnee += d;
-        this.abscisse += c;
+        ordonnee += d;
+        abscisse += c;
     }
     public boolean Coincide(point p) {
         if (p == null) return false;
